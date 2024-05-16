@@ -120,7 +120,7 @@ class PageViewDashboard extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return PageView(
-      physics: const PageScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       controller: controller.pageController,
       onPageChanged: controller.onPageChanged,
       children: const [

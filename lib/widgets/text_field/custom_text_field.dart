@@ -9,6 +9,7 @@ class CustomTextField extends StatelessWidget {
   final int? maxLength;
   final TextInputType inputType;
   final TextFieldWrapper wrapper;
+  final ValueChanged<String>? onChanged;
   final bool isEnabled;
 
   const CustomTextField({
@@ -17,7 +18,7 @@ class CustomTextField extends StatelessWidget {
     required this.hintText,
     this.maxLength,
     this.inputType = TextInputType.text,
-    this.isEnabled = true,
+    this.isEnabled = true, this.onChanged,
   });
 
   @override
@@ -29,6 +30,7 @@ class CustomTextField extends StatelessWidget {
         maxLength: maxLength,
         keyboardType: inputType,
         enabled: isEnabled,
+        onChanged: onChanged,
         decoration: InputDecoration(
           errorText: wrapper.errorText.isEmpty ? null : wrapper.errorText,
           errorStyle: Styles.tsBlackRegular14,

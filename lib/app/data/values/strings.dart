@@ -10,10 +10,15 @@ class Strings {
   static const appBarContinent = 'CONTINENTS';
   static const appBarCountries = 'COUNTRIES';
 
+  static const capital = 'Capital: ';
+  static const population = 'Population: ';
+  static const region = 'Region: ';
+  static const subregion = 'Subregion: ';
+
   static const asia = 'Asia';
   static const africa = 'Africa';
   static const antarctica = 'Antarctica';
-  static const australia = 'Australia';
+  static const australia = 'Oceania';
   static const europe = 'Europe';
   static const northAmerica = 'North America';
   static const southAmerica = 'South America';

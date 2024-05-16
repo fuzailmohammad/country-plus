@@ -11,6 +11,12 @@ class Styles {
     fontSize: 18.0,
   );
 
+  static const tsWhiteRegular14 = TextStyle(
+    color: AppColors.white,
+    fontWeight: FontWeight.w400,
+    fontSize: 14.0,
+  );
+
   static const tsWhiteRegular20 = TextStyle(
     color: AppColors.white,
     fontWeight: FontWeight.w400,
@@ -35,6 +41,12 @@ class Styles {
     fontSize: 18.0,
   );
 
+  static const tsPrimaryColorBold20 = TextStyle(
+    color: AppColors.primaryColor,
+    fontWeight: FontWeight.w600,
+    fontSize: 20.0,
+  );
+
   static const tsBlackRegular18 = TextStyle(
     color: AppColors.black,
     fontWeight: FontWeight.w400,
@@ -44,6 +56,12 @@ class Styles {
   static const tsBlackRegular14 = TextStyle(
     color: AppColors.black,
     fontWeight: FontWeight.w400,
+    fontSize: 14.0,
+  );
+
+  static const tsBlackBold14 = TextStyle(
+    color: AppColors.black,
+    fontWeight: FontWeight.w600,
     fontSize: 14.0,
   );
 

@@ -40,14 +40,9 @@ class AllContinentView extends GetView<AllContinentController> {
                       title: Strings.africa,
                     ),
                     MainButton(
-                      onTap: () {},
+                      onTap: () {controller.onTapContinent(Strings.europe);},
                       image: Images.europe,
                       title: Strings.europe,
-                    ),
-                    MainButton(
-                      onTap: () {},
-                      image: Images.asia,
-                      title: Strings.asia,
                     ),
                   ],
                 ),
@@ -58,29 +53,34 @@ class AllContinentView extends GetView<AllContinentController> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     MainButton(
-                      onTap: () {},
+                      onTap: () {controller.onTapContinent(Strings.southAmerica);},
                       image: Images.southAmerica,
                       title: Strings.southAmerica,
                     ),
                     MainButton(
-                      onTap: () {},
+                      onTap: () {controller.onTapContinent(Strings.northAmerica);},
                       image: Images.northAmerica,
                       title: Strings.northAmerica,
-                    ),
-                    MainButton(
-                      onTap: () {},
-                      image: Images.australia,
-                      title: Strings.australia,
                     ),
                   ],
                 ),
                 const SizedBox(
                   height: 10,
                 ),
-                MainButton(
-                  onTap: () {},
-                  image: Images.antarctica,
-                  title: Strings.antarctica,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    MainButton(
+                      onTap: () {controller.onTapContinent(Strings.australia);},
+                      image: Images.australia,
+                      title: Strings.australia,
+                    ),
+                    MainButton(
+                      onTap: () {controller.onTapContinent(Strings.asia);},
+                      image: Images.asia,
+                      title: Strings.asia,
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -108,8 +108,8 @@ class MainButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: (Get.width / 3) - 30,
-        width: (Get.width / 3) - 30,
+        height: (Get.width / 2.5) - 30,
+        width: (Get.width / 2.5) - 30,
         decoration: BoxDecoration(
             color: AppColors.white.withOpacity(0.5),
             borderRadius: BorderRadius.circular(10)),
@@ -118,8 +118,8 @@ class MainButton extends StatelessWidget {
           children: [
             Image.asset(
               image,
-              height: 50,
-              width: 50,
+              height: 80,
+              width: 80,
             ),
             Text(
               title,

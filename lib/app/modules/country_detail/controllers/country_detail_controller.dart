@@ -1,9 +1,7 @@
+import 'package:country_plus/app/data/models/dto/country.dart';
 import 'package:get/get.dart';
 
 class CountryDetailController extends GetxController {
   //TODO: Implement CountryDetailController
-
-  final count = 0.obs;
-
-  void increment() => count.value++;
+  final Country country = Get.arguments;
 }
