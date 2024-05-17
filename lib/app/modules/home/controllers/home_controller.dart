@@ -11,6 +11,7 @@ class HomeController extends GetxController {
   void onClose() {}
 
   switchPage(int index) {
+    FocusManager.instance.primaryFocus?.unfocus();
     if (currentPage != index) {
       pageController.jumpToPage(index);
     }

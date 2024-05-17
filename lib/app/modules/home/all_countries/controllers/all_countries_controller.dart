@@ -17,16 +17,17 @@ class AllCountriesController extends BaseController<ConfigRepository> {
   @override
   void onReady() {
     super.onReady();
-    _getCountryList();
+    getCountryList();
   }
 
-  void _getCountryList() async {
+ Future <void> getCountryList() async {
     LoadingUtils.showLoader();
     final response = await repository.getCountryList();
     LoadingUtils.hideLoader();
     if (response.data != null) {
       countryList.assignAll(response.data!);
       filteredCountryList.assignAll(response.data!);
+      centerText.value = "No Country Found";
     } else {
       HandleError.handleError(response.error);
       centerText.value = response.error!.message;

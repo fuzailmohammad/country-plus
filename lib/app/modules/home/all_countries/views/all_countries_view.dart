@@ -20,11 +20,14 @@ class AllCountriesView extends GetView<AllCountriesController> {
         title: const Text(Strings.appBarCountries),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          _buildSearchBar(),
-          _buildCountryList(),
-        ],
+      body: RefreshIndicator(
+        onRefresh: controller.getCountryList,
+        child: Column(
+          children: [
+            _buildSearchBar(),
+            _buildCountryList(),
+          ],
+        ),
       ),
     );
   }
