@@ -1,16 +1,25 @@
-# country_plus
+# Country Plus
 
-A new Flutter project.
+A new Flutter project for managing and displaying country information.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a Flutter application designed to provide detailed information about various countries. Follow the instructions below to set up and run the application on your local machine.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Before you can run this application, make sure you have the following installed:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Flutter](https://flutter.dev/docs/get-started/install) (version 2.0 or higher)
+- [Dart](https://dart.dev/get-dart)
+- An IDE such as [Android Studio](https://developer.android.com/studio) or [Visual Studio Code](https://code.visualstudio.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/fuzailmohammad/country-plus.git
+   cd country_plus
+   flutter pub get
+   flutter run
